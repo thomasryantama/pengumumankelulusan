@@ -82,12 +82,9 @@
 </head>
 <body class="h-full font-body bg-cream text-navy overflow-auto">
   
-  <!-- PAGE 1: Landing -->
   <div id="page-landing" class="w-full min-h-full flex flex-col">
-   <!-- Header -->
    <header class="w-full bg-navy py-4 px-4 shadow-lg animate-fadeIn">
     <div class="max-w-5xl mx-auto flex items-center justify-center gap-4 flex-wrap">
-     <!-- Logo Sekolah -->
      <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white border-2 border-gold flex items-center justify-center flex-shrink-0 overflow-hidden">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEn1FUrVKBsLV8dQFPL1pm3MhHiI8RoTLOpQ&s" alt="Logo SD Methodist Immanuel" class="w-full h-full object-contain p-1">
      </div>
@@ -98,7 +95,6 @@
     </div>
    </header>
 
-   <!-- Countdown Timer -->
    <section class="w-full bg-gradient-to-r from-navy via-[#243558] to-navy py-6 px-4">
     <div class="max-w-4xl mx-auto text-center">
      <h2 class="text-gold font-heading text-lg md:text-xl mb-4 animate-fadeInUp">⏱️ Waktu Pengumuman</h2>
@@ -111,10 +107,8 @@
     </div>
    </section>
 
-   <!-- Illustration & Welcome -->
    <main class="flex-1 w-full px-4 py-8 md:py-12">
     <div class="max-w-4xl mx-auto">
-     <!-- Illustration -->
      <div class="text-center mb-8 animate-fadeInUp delay-1">
       <div class="animate-float inline-block">
        <svg width="240" height="180" viewBox="0 0 240 180" class="mx-auto w-56 md:w-64">
@@ -137,7 +131,6 @@
       <p class="text-gold font-heading text-lg mt-2 italic">"Masa depan yang penuh harapan"</p>
      </div>
 
-     <!-- Sambutan Kepala Sekolah -->
      <div class="glass-card rounded-2xl p-6 md:p-8 shadow-xl max-w-3xl mx-auto animate-fadeInUp delay-2">
       <div class="flex items-center gap-3 mb-4">
        <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center"><i data-lucide="quote" class="w-5 h-5 text-gold"></i></div>
@@ -146,14 +139,12 @@
       <p class="text-navy/80 leading-relaxed text-sm md:text-base text-justify">Shalom, salam sejahtera dalam kasih Tuhan kita Yesus Kristus. Dengan penuh rasa syukur, kami mengucapkan selamat kepada seluruh siswa-siswi SD METHODIST IMMANUEL BANDAR LAMPUNG yang telah menyelesaikan pendidikan tingkat dasar selama 6 tahun. Seperti tertulis dalam Yeremia 29:11, <em>"Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan."</em> Kiranya Tuhan senantiasa memberkati langkah kalian ke jenjang pendidikan selanjutnya.</p>
      </div>
 
-     <!-- Login Button -->
      <div class="text-center mt-10 animate-fadeInUp delay-3">
       <button onclick="showPage('check')" class="shimmer-btn text-navy font-bold text-base md:text-lg px-8 py-4 rounded-full shadow-xl hover:scale-105 transition-transform duration-300 inline-flex items-center gap-3">
        <i data-lucide="log-in" class="w-5 h-5"></i> LOGIN UNTUK MELIHAT HASIL KELULUSAN 
       </button>
      </div>
 
-     <!-- Admin Access -->
      <div class="text-center mt-6 animate-fadeInUp delay-4">
       <button onclick="showPage('admin-login')" class="text-navy/50 hover:text-navy text-sm underline underline-offset-4 transition-colors">
        <i data-lucide="shield" class="w-3 h-3 inline mr-1"></i>Akses Admin 
@@ -162,13 +153,11 @@
     </div>
    </main>
 
-   <!-- Footer -->
    <footer class="w-full bg-navy py-4 px-4 text-center">
     <p id="footer-display" class="text-white/70 text-xs md:text-sm">© 2026 SD METHODIST IMMANUEL BANDAR LAMPUNG | Dibuat dengan kasih oleh: Thomas Ryantama, M.Kom</p>
    </footer>
   </div>
 
-  <!-- PAGE 2: Check Graduation -->
   <div id="page-check" class="w-full min-h-full flex-col hidden">
    <header class="w-full bg-navy py-4 px-4 shadow-lg">
     <div class="max-w-5xl mx-auto flex items-center justify-between">
@@ -203,7 +192,6 @@
    </footer>
   </div>
 
-  <!-- PAGE 3: Admin Login -->
   <div id="page-admin-login" class="w-full min-h-full flex-col hidden">
    <header class="w-full bg-navy py-4 px-4 shadow-lg">
     <div class="max-w-5xl mx-auto flex items-center justify-between">
@@ -234,7 +222,6 @@
    </main>
   </div>
 
-  <!-- PAGE 4: Admin Dashboard -->
   <div id="page-admin" class="w-full min-h-full flex-col hidden">
    <header class="w-full bg-navy py-4 px-4 shadow-lg">
     <div class="max-w-5xl mx-auto flex items-center justify-between">
@@ -245,7 +232,6 @@
    </header>
    <main class="flex-1 w-full px-4 py-6 md:py-10">
     <div class="max-w-5xl mx-auto space-y-6">
-     <!-- Upload Section -->
      <div class="glass-card rounded-2xl p-6 shadow-xl animate-fadeInUp">
       <h3 class="font-heading text-lg font-bold text-navy mb-3 flex items-center gap-2"><i data-lucide="upload" class="w-5 h-5 text-gold"></i> Upload Data Siswa (CSV)</h3>
       <p class="text-navy/60 text-sm mb-4">Format CSV: <code class="bg-navy/10 px-2 py-0.5 rounded text-xs">NISN,Nama,Status Kelulusan,Status Administrasi</code><br> Contoh: <code class="bg-navy/10 px-2 py-0.5 rounded text-xs">0012345678,Budi Santoso,LULUS,Selesai</code></p>
@@ -256,7 +242,6 @@
       <div id="upload-status" class="mt-3 hidden text-sm"></div>
      </div>
 
-     <!-- Add Student Manually -->
      <div class="glass-card rounded-2xl p-6 shadow-xl animate-fadeInUp delay-1">
       <h3 class="font-heading text-lg font-bold text-navy mb-3 flex items-center gap-2"><i data-lucide="user-plus" class="w-5 h-5 text-gold"></i> Tambah Data Siswa</h3>
       <form id="add-student-form" class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -268,7 +253,6 @@
       </form>
      </div>
 
-     <!-- Student Table -->
      <div class="glass-card rounded-2xl p-6 shadow-xl animate-fadeInUp delay-2">
       <h3 class="font-heading text-lg font-bold text-navy mb-3 flex items-center gap-2"><i data-lucide="users" class="w-5 h-5 text-gold"></i> Data Siswa (<span id="student-count">0</span> siswa)</h3>
       <div class="overflow-x-auto">
@@ -295,61 +279,61 @@
   </div>
 
   <script>
-        // Data yang sudah diperbaiki agar NISN 0 di depan tidak hilang
+        // Data yang sudah diperbarui dengan status "Belum" untuk daftar siswa yang diminta
         const permanentData = [
             { nisn: '0144883988', nama: 'CELLINA EFFENDI', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '3144301256', nama: 'CLAVIUS REYNARD', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '0136304857', nama: 'CORNELIUS NATHANAEL', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '3144700687', nama: 'DAVE JONATHAN YULIANTO', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '0133991582', nama: 'ELISA KOINONIA SIAHAAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '3146247786', nama: 'ELLORA NATASHA VALERIA M M.', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '3146247786', nama: 'ELLORA NATASHA VALERIA M M.', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '3143376136', nama: 'GABRIELLA BERNICE WILSON NAINGGOLAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '3144586581', nama: 'GERALDI JOSEA JONATHAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0145605303', nama: 'GODWIN ELHANAN BENEDICT ZAI', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0133684912', nama: 'HANAKA JASENDA JOAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '0145605303', nama: 'GODWIN ELHANAN BENEDICT ZAI', kelulusan: 'LULUS', administrasi: 'Belum' },
+            { nisn: '0133684912', nama: 'HANAKA JASENDA JOAN', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '3147415182', nama: 'HILLARY INTAN NATHANIA', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '3130281557', nama: 'JEFFRAY CRISTOPHER SAMBUAGA', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0134677694', nama: 'JEREMI JORDAN BINTANG SINAGA', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '3130281557', nama: 'JEFFRAY CRISTOPHER SAMBUAGA', kelulusan: 'LULUS', administrasi: 'Belum' },
+            { nisn: '0134677694', nama: 'JEREMI JORDAN BINTANG SINAGA', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '3130863910', nama: 'JESI ANDRIANA', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '3142442975', nama: 'JESSICA SHINRAN FANG', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0131562284', nama: 'JOAQUINA JENNIFER FEODORA PURBA', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '0131562284', nama: 'JOAQUINA JENNIFER FEODORA PURBA', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '0136934634', nama: 'JUAN NICHOLAS GUNAWAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '0131081982', nama: 'KEZHIA AGUSTINA', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '0136789711', nama: 'MARVEL MALEAKHI', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '3138898960', nama: 'MICHELLE IRENE NATASHA SIAHAAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0144146688', nama: 'NATALIE PRICILLIA MARQURITE', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0149852540', nama: 'NEVAN NABEL PANGGABEAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0132978307', nama: 'NICO STEFAN SALIM', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '0144146688', nama: 'NATALIE PRICILLIA MARQURITE', kelulusan: 'LULUS', administrasi: 'Belum' },
+            { nisn: '0149852540', nama: 'NEVAN NABEL PANGGABEAN', kelulusan: 'LULUS', administrasi: 'Belum' },
+            { nisn: '0132978307', nama: 'NICO STEFAN SALIM', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '0143811884', nama: 'RIBKA MARSHALINA LANAZ N A.', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0139568953', nama: 'RICO STEFAN SALIM', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '0139568953', nama: 'RICO STEFAN SALIM', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '0128955512', nama: 'SAMUEL AGUSTINUS', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0136876968', nama: 'ANITA CHRISTABEL FARIISTA', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '0136876968', nama: 'ANITA CHRISTABEL FARIISTA', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '0137811884', nama: 'CALISTA KAIRA ANGELICA', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '3141298435', nama: 'CHIARA VANIANDRA', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '0147999860', nama: 'CHRISTIAN ALEXANDER WIJAYA', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0147164379', nama: 'CLARINE VELLOCIA GUNAWAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0141900300', nama: 'CLARISE VELLOCIA GUNAWAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '0147164379', nama: 'CLARINE VELLOCIA GUNAWAN', kelulusan: 'LULUS', administrasi: 'Belum' },
+            { nisn: '0141900300', nama: 'CLARISE VELLOCIA GUNAWAN', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '0144413134', nama: 'DESTAN DIQEN DERRELL', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '3148373034', nama: 'GABRIELLA BRENDA HARDIANNI', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '0141308578', nama: 'GILBERT MENDY', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '3145119664', nama: 'GRACIA GAVRILLA HUTABARAT', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0135440019', nama: 'HOSEAN PARADE PASARIBU', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0149061215', nama: 'JASSLYN MEGITHA', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '3145119664', nama: 'GRACIA GAVRILLA HUTABARAT', kelulusan: 'LULUS', administrasi: 'Belum' },
+            { nisn: '0135440019', nama: 'HOSEAN PARADE PASARIBU', kelulusan: 'LULUS', administrasi: 'Belum' },
+            { nisn: '0149061215', nama: 'JASSLYN MEGITHA', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '0142166306', nama: 'JO STEVEN FORDINAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '3142605168', nama: 'KAREN JADELYN GRACELLA', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '3133143906', nama: 'KAREN JOSEPHINE', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '3133143906', nama: 'KAREN JOSEPHINE', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '0147542534', nama: 'MACKENZIE DANISWARA ARGANI', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0143849645', nama: 'MARYO TUA PAKPAHAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '0143849645', nama: 'MARYO TUA PAKPAHAN', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '3143866088', nama: 'MIKAELA ESTELLE WEN', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0149117847', nama: 'RAPHAEL SERAFIM PANGARIBUAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '3133627457', nama: 'RICHIE GLORY LONTOH', kelulusan: 'LULUS', administrasi: 'Selesai' },
+            { nisn: '0149117847', nama: 'RAPHAEL SERAFIM PANGARIBUAN', kelulusan: 'LULUS', administrasi: 'Belum' },
+            { nisn: '3133627457', nama: 'RICHIE GLORY LONTOH', kelulusan: 'LULUS', administrasi: 'Belum' },
             { nisn: '0117025954', nama: 'STEVE ORLANDO PUTRA', kelulusan: 'PINDAH', administrasi: 'Selesai' },
             { nisn: '0148639842', nama: 'VERONALD BRYAN CHRISTOFORUS', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '3141163660', nama: 'VIOREL KYLAN MANIHURUK', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '3149326572', nama: 'XAVIER VALENTINO ETHAN', kelulusan: 'LULUS', administrasi: 'Selesai' },
             { nisn: '3144855793', nama: 'YUVERALDO ARVICO', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '3132770710', nama: 'ZEFANYA CHELSEA GWEN', kelulusan: 'LULUS', administrasi: 'Selesai' },
-            { nisn: '0148721262', nama: 'ZEFANYA FILLADELVIA TANUWIJAYA', kelulusan: 'LULUS', administrasi: 'Selesai' }
+            { nisn: '3132770710', nama: 'ZEFANYA CHELSEA GWEN', kelulusan: 'LULUS', administrasi: 'Belum' },
+            { nisn: '0148721262', nama: 'ZEFANYA FILLADELVIA TANUWIJAYA', kelulusan: 'LULUS', administrasi: 'Belum' }
         ];
 
         // Karena data sudah disematkan, kita pastikan setiap refresh membaca data yang paling baru dari skrip
